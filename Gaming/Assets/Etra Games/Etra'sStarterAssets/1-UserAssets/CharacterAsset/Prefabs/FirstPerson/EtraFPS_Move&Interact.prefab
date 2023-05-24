@@ -418,6 +418,8 @@ GameObject:
   - component: {fileID: 8701270706474542290}
   - component: {fileID: 8701270706474542317}
   - component: {fileID: 8701270706474542316}
+  - component: {fileID: 5823523863125068709}
+  - component: {fileID: 1335587464052421366}
   m_Layer: 7
   m_Name: EtraAbilityManager
   m_TagString: Untagged
@@ -458,6 +460,8 @@ MonoBehaviour:
   - {fileID: 8701270706474542290}
   - {fileID: 8701270706474542317}
   - {fileID: 8701270706474542316}
+  - {fileID: 1335587464052421366}
+  - {fileID: 5823523863125068709}
 --- !u!114 &8701270706474542288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,7 +516,7 @@ MonoBehaviour:
   passedMovementInput: {x: 0, y: 0}
   sprintSpeed: 0
   isCrouched: 0
-  crouchSpeed: 0
+  crouchSpeed: 4
 --- !u!114 &8701270706474542290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,6 +567,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityEnabled: 1
   interactDistance: 2
+--- !u!114 &5823523863125068709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8701270706474542318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa11177d6aa52fd4d9419b18619d9cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityEnabled: 1
+  crouchedMovementSpeed: 1
+  CrouchType: 0
+  timeToCrouch: 0.25
+--- !u!114 &1335587464052421366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8701270706474542318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa11177d6aa52fd4d9419b18619d9cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityEnabled: 1
+  crouchedMovementSpeed: 4
+  CrouchType: 1
+  timeToCrouch: 0.25
 --- !u!1 &8701270706549074730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,7 +1056,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8701270707722302210}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.375, z: 0}
+  m_LocalPosition: {x: -1.92, y: 1.375, z: -5.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1052,7 +1088,7 @@ Camera:
     height: 1
   near clip plane: 0.2
   far clip plane: 500
-  field of view: 40
+  field of view: 90
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
