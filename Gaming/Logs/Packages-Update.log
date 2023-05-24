@@ -1,5 +1,5 @@
 
-=== Sun Apr 16 21:05:25 2023
+=== Wed May 24 13:59:18 2023
 
 Packages were changed.
 Update Mode: mergeDefaultDependencies
@@ -44,3 +44,20 @@ The following packages were updated:
   com.unity.collab-proxy from version 1.13.5 to 2.0.0
   com.unity.timeline from version 1.6.2 to 1.6.4
   com.unity.visualscripting from version 1.7.6 to 1.8.0
+
+=== Wed May 24 14:13:29 2023
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.cinemachine from version 2.6.17 to 2.8.9
+  com.unity.inputsystem from version 1.4.4 to 1.5.0
+
+=== Wed May 24 14:13:30 2023
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.cinemachine@2.8.9
