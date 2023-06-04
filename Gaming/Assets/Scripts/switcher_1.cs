@@ -7,7 +7,24 @@ public class switcher_1 : MonoBehaviour
     
 {
     [Header("level")]
-    public string requested_scene = "tutorial_2";
+    public string requested_scene = "lvl";
+    public bool showMouseCursor = true;
+
+    private void Start()
+    {
+        if (showMouseCursor)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+    }
+
+
     void OnTriggerEnter(Collider other)
     {
         

@@ -401,12 +401,15 @@
 "Assets/Etra Games/Etra'sStarterAssets/2-Source/ThirdParty/LeanTween/Framework/LTDescrOptional.cs"
 "Assets/Etra Games/Etra'sStarterAssets/2-Source/ThirdParty/LeanTween/Framework/LTSeq.cs"
 "Assets/Etra Games/Etra'sStarterAssets/2-Source/ThirdParty/StarterAssets-FPC/TutorialInfo/Scripts/Readme.cs"
-"Assets/Scripts/LevitateOnTrigger.cs"
-"Assets/Scripts/LevitationTrigger.cs"
+"Assets/Scripts/ApeerDisapeer.cs"
+"Assets/Scripts/ColorLerp.cs"
+"Assets/Scripts/FanTrigger.cs"
+"Assets/Scripts/MainMenu.cs"
+"Assets/Scripts/MovePlatform.cs"
+"Assets/Scripts/MovyPlatform.cs"
+"Assets/Scripts/PlatformDisappear.cs"
 "Assets/Scripts/switcher_1.cs"
 "Assets/Scripts/TeleportTrigger.cs"
-"Assets/Scripts/TriggerGravityChange.cs"
-"Assets/Scripts/WaterTrigger.cs"
 -langversion:9.0
 
 /deterministic

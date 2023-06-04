@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8701270705651850170}
   - component: {fileID: 8701270705651850168}
   - component: {fileID: 8701270705651850171}
+  - component: {fileID: 4403898308525562211}
   m_Layer: 0
   m_Name: CapsuleCharacterModel
   m_TagString: Untagged
@@ -83,6 +84,102 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!82 &4403898308525562211
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8701270705651850165}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5566cecf2ce7faf45bf6b2cd4b690a48, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &8701270706066661205
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,12 +511,12 @@ GameObject:
   - component: {fileID: 8701270706474542319}
   - component: {fileID: 8701270706474542289}
   - component: {fileID: 8701270706474542288}
+  - component: {fileID: 4651477787483698406}
   - component: {fileID: 8701270706474542291}
   - component: {fileID: 8701270706474542290}
   - component: {fileID: 8701270706474542317}
   - component: {fileID: 8701270706474542316}
   - component: {fileID: 5823523863125068709}
-  - component: {fileID: 1335587464052421366}
   m_Layer: 7
   m_Name: EtraAbilityManager
   m_TagString: Untagged
@@ -460,8 +557,8 @@ MonoBehaviour:
   - {fileID: 8701270706474542290}
   - {fileID: 8701270706474542317}
   - {fileID: 8701270706474542316}
-  - {fileID: 1335587464052421366}
   - {fileID: 5823523863125068709}
+  - {fileID: 4651477787483698406}
 --- !u!114 &8701270706474542288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,6 +589,20 @@ MonoBehaviour:
   lockLookX: 0
   lockLookY: 0
   playerCameraRoot: {fileID: 8701270706232046753}
+--- !u!114 &4651477787483698406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8701270706474542318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 691241e4558efb945b7e510a197a131c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityEnabled: 1
+  sprintSpeed: 6
 --- !u!114 &8701270706474542291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,9 +625,9 @@ MonoBehaviour:
   rightUnlocked: 1
   leftUnlocked: 1
   passedMovementInput: {x: 0, y: 0}
-  sprintSpeed: 0
+  sprintSpeed: 6
   isCrouched: 0
-  crouchSpeed: 4
+  crouchSpeed: 1
 --- !u!114 &8701270706474542290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,22 +693,6 @@ MonoBehaviour:
   abilityEnabled: 1
   crouchedMovementSpeed: 1
   CrouchType: 0
-  timeToCrouch: 0.25
---- !u!114 &1335587464052421366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8701270706474542318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa11177d6aa52fd4d9419b18619d9cd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abilityEnabled: 1
-  crouchedMovementSpeed: 4
-  CrouchType: 1
   timeToCrouch: 0.25
 --- !u!1 &8701270706549074730
 GameObject:
@@ -1056,7 +1151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8701270707722302210}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.92, y: 1.375, z: -5.37}
+  m_LocalPosition: {x: 0, y: 1.375, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1088,7 +1183,7 @@ Camera:
     height: 1
   near clip plane: 0.2
   far clip plane: 500
-  field of view: 90
+  field of view: 40
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
